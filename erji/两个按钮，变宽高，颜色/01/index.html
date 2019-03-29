@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#div1{
+				width: 200px;
+				height: 200px;
+				border:1px solid;
+				}
+		</style>
+		<script>
+		window.onload=function(){
+			var obtn1=document.getElementById('obtn1');
+			var obtn2=document.getElementById('obtn2');
+			var odiv=document.getElementById('div1');
+			obtn1.onclick=function()
+			{
+				odiv.style.width='300px';
+				odiv.style.height='300px';
+			}
+			obtn2.onclick=function(){
+				odiv.style.background='red';
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<input id="obtn1" type="button" value="变宽高"/>
+		<input id="obtn2" type="button" value="变颜色""/>
+		<div id="div1">
+			
+		</div>
+	</body>
+</html>
